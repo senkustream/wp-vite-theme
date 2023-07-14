@@ -1,0 +1,1 @@
+document.getElementById('message').innerText = 'This message comes from assets/js/app.js';

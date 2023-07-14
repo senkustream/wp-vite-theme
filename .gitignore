@@ -23,5 +23,8 @@ dist-ssr
 *.sln
 *.sw?
 
-# ignore composer vendor
+# ignore additional files and folders
 vendor
+.env
+# public folder will be generated after run build command
+public

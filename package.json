@@ -4,11 +4,14 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "NODE_ENV=development vite",
     "build": "vite build",
     "preview": "vite preview"
   },
   "devDependencies": {
     "vite": "^4.4.0"
+  },
+  "dependencies": {
+    "vite-plugin-live-reload": "^3.0.2"
   }
 }
