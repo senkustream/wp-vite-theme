@@ -18,6 +18,7 @@ define('VITE_ENTRY_POINT', '/main.js');
 add_action( 'wp_enqueue_scripts', function () {
     if (defined('VITE_ENV') && VITE_ENV === 'development') {
         function vite_head_module_hook() {
+            echo '<script type="module" crossorigin src="'. VITE_SERVER .'/@vite/client"></script>';
             echo '<script type="module" crossorigin src="'. VITE_SERVER . VITE_ENTRY_POINT . '"></script>';
         }
         add_action( 'wp_head', 'vite_head_module_hook' );

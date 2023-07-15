@@ -4,10 +4,6 @@
  * 
  * http://localhost:5173 is serving Vite on development. Access this URL will show empty page.
  * 
- * IMPORTANT! <= TODO: Check this if this statement is true!
- * Image urls in CSS works well in production mode.
- * But, you need to create a symlink on dev server to map this folder during development mode:
- * ln -s {path_to_vite}/src/assets {path_to_public_html}/assets
  */
 
 import { defineConfig } from "vite";
