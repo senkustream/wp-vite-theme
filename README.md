@@ -2,6 +2,11 @@
 
 Generic WordPress Theme integrate with ViteJS. Motivated from [wp-theme-vite-tailwind](https://github.com/blonestar/wp-theme-vite-tailwind).
 
+## Requirements
+
+- PHP version >= 8.2
+- NodeJS version >= 18
+
 ## Brief Setup
 
 - You have been run WordPress with `wp server` or any other development runner like Laragon, Valet, et cetera. It will shows URL like `http://localhost:8080` or `wordpress-vite-theme.test` if you use Laragon or Valet.
