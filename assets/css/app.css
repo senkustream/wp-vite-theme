@@ -10,3 +10,8 @@ body {
     margin: 0 auto;
     text-align: center;
 }
+
+#image-background {    
+    aspect-ratio: 1 / 1;
+    background-size: cover;
+}
