@@ -26,17 +26,11 @@ add_action( 'wp_enqueue_scripts', function () {
         // Production version
         $manifest = json_decode(file_get_contents(DIST_PATH . '/manifest.json'), true);
         if (is_array($manifest)) {
-            $manifest_keys = array_keys($manifest);
-            
             // CSS
-            if (isset($manifest_keys['0'])) {
-                wp_enqueue_style( 'main', DIST_URI . '/' . $manifest[$manifest_keys['0']]['file'], array(), false, 'screen' );
-            }
+            wp_enqueue_style( 'main', DIST_URI . '/' . $manifest['main.js']['css']['0'], array(), false, 'screen' );
 
             // JS
-            if (isset($manifest_keys['1'])) {
-                wp_enqueue_script( 'main', DIST_URI . '/' . $manifest[$manifest_keys['1']]['file'], array(), false, true );
-            }
+            wp_enqueue_script( 'main', DIST_URI . '/' . $manifest['main.js']['file'], array(), false, true );
         }
     }
 });
