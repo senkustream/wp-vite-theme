@@ -6,7 +6,9 @@
 
         <!-- Your turn -->
         <div id="message"></div>
-
+        <div style="margin: 8px 0;">
+            <p>You can set background image too!</p>
+        </div>
         <div id="image-background" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/almas-salakhov-4a1Ix4SBK-c-unsplash.jpg);"></div>
     </div>
 <?php get_footer(); ?>
