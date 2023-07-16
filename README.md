@@ -23,7 +23,7 @@ composer create-project kresnasatya/wp-vite-theme your-theme-name
 
 If you check Vite URL in will contain empty file. Because it serve as a runner for your assets such as CSS and JavaScript.
 
-Just try edit `index.php`, save it! Check the browser without refresh the browser. Thanks to [vite-plugin-live-reload plugin](https://github.com/arnoson/vite-plugin-live-reload).
+Just try edit `index.php`, save it! Check the browser without refresh the browser. Thanks to [vite-plugin-full-reload plugin](https://github.com/ElMassimo/vite-plugin-full-reload).
 
 ## Brief Setup for Production Mode
 
