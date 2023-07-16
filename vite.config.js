@@ -7,12 +7,12 @@
  */
 
 import { defineConfig } from "vite";
-import liveReload from "vite-plugin-live-reload";
+import FullReload from "vite-plugin-full-reload";
 import { resolve } from 'path';
 
 export default defineConfig({
     plugins: [
-        liveReload(__dirname + '/**/*.php')
+        FullReload(['/**/*.php'])
     ],
 
     // config

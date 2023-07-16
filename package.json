@@ -9,9 +9,7 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "vite": "^4.4.0"
-  },
-  "dependencies": {
-    "vite-plugin-live-reload": "^3.0.2"
+    "vite": "^4.4.0",
+    "vite-plugin-full-reload": "^1.0.5"
   }
 }
