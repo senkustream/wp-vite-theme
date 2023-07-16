@@ -9,9 +9,14 @@ Generic WordPress Theme integrate with ViteJS. Motivated from [wp-theme-vite-tai
 
 ## Brief Setup for Development Mode
 
-- You have been run WordPress with `wp server` or any other development runner like Laragon, Valet, et cetera. It will shows URL like `http://localhost:8080` or `wordpress-vite-theme.test` if you use Laragon or Valet.
-- Clone this repository.
-- Copy .env.example file to .env file. Change `VITE_SERVER` with the URL if necessary in case you have run another Vite based project in another terminal.
+- You already run WordPress project with `wp server` or any other development tools like Laragon or Valet. It will shows URL like `http://localhost:8080` if you use `wp server` or `wordpress-vite-theme.test` if you use Laragon or Valet.
+- Go to `wp-content/themes` directory. Then download `wp-vite-theme` project with command below.
+
+```bash
+composer create-project kresnasatya/wp-vite-theme your-theme-name
+```
+
+- Go to your `your-theme-name` directory. Change `VITE_SERVER` in`.env` file with the another Vite URL in case you have run another Vite based project in another terminal.
 - Run `composer install`.
 - Run `pnpm install` or `npm install`.
 - Run `pnpm run dev` or `npm run dev`.
@@ -22,9 +27,7 @@ Just try edit `index.php`, save it! Check the browser without refresh the browse
 
 ## Brief Setup for Production Mode
 
-- Stop `wp server` and `pnpm run dev`.
+- Stop `wp server` and `pnpm run dev` or `npm run dev`.
 - Change the value of `VITE_ENV` in `.env` file from `development` to `production`.
 - Run command `pnpm run build` or `npm run build`.
 - Run `wp server` again.
-
-Wanna run assets in production mode? Just run `pnpm run build`.
