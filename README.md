@@ -25,9 +25,31 @@ If you check Vite URL in will contain empty file. Because it serve as a runner f
 
 Just try edit `index.php`, save it! Check the browser without refresh the browser. Thanks to [vite-plugin-full-reload plugin](https://github.com/ElMassimo/vite-plugin-full-reload).
 
+### How to handling static assets in CSS and JS in WordPress + Vite Environment?
+
+In production mode, static assets like images, fonts work well. BUT, not in development mode! In order to make it works, you need to set a symbolic link or symlink from source folder to destination folder. Here's the example.
+
+```bash
+# I store my images file in public directory
+# I make a WordPress project called wpground.
+# I make a WordPress theme called wp-vite-theme
+# The ~ is a tilde symbol mean a "home" symbol in macOS. I don't know in another OS, sorry.
+
+# Images
+ln -s ~/wpground/wp-content/wp-vite-theme/public/images ~/wpground/images
+
+# Fonts
+ln -s ~/wpground/wp-content/wp-vite-theme/public/fonts ~/wpground/fonts
+```
+
 ## Brief Setup for Production Mode
 
 - Stop `wp server` and `pnpm run dev` or `npm run dev`.
 - Change the value of `VITE_ENV` in `.env` file from `development` to `production`.
 - Run command `pnpm run build` or `npm run build`.
 - Run `wp server` again.
+
+## Credits
+
+- Photo by <a href="https://unsplash.com/@tom2185?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Tom Delanoue</a> on <a href="https://unsplash.com/photos/Cf4-4BZdim8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+- Photo by <a href="https://unsplash.com/@mono_log?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">mono-log</a> on <a href="https://unsplash.com/photos/a-group-of-trees-reflected-in-a-body-of-water--HvOSe0s7Y8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
