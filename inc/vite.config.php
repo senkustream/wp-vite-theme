@@ -5,7 +5,7 @@ if (! defined( 'ABSPATH' )) {
 }
 
 // Define dist directory, base uri, and path
-define('DIST_DIR', 'public');
+define('DIST_DIR', 'dist');
 define('DIST_URI', get_template_directory_uri() . '/' . DIST_DIR);
 define('DIST_PATH', get_template_directory() . '/' . DIST_DIR);
 

@@ -15,29 +15,15 @@ export default defineConfig({
         FullReload(['/**/*.php'])
     ],
 
-    // config
-    root: '',
-    base: process.env.NODE_ENV === 'development' ? '/' : '/public/',
-
     build: {
-        // output dir for production build
-        outDir: resolve(__dirname, './public'),
-        emptyOutDir: true,
-
         // emit manifest so PHP can find the hashed files
         manifest: true,
-
-        // esbuild target
-        target: 'es6',
 
         rollupOptions: {
             input: {
                 main: resolve(__dirname + '/main.js')
             },
-        },
-
-        minify: true,
-        write: true
+        }
     },
 
     server: {
@@ -49,13 +35,6 @@ export default defineConfig({
         // We need a strict port to match on PHP side.
         // You can change it. But, please update it on your .env file to match the same port
         strictPort: true,
-        port: 5173,
-        
-        // Disable https
-        https: false,
-
-        hmr: {
-            host: 'localhost'
-        }
+        port: 5173
     },
 });
