@@ -7,12 +7,17 @@
  */
 
 import { defineConfig } from "vite";
-import FullReload from "vite-plugin-full-reload";
 import { resolve } from 'path';
 
 export default defineConfig({
     plugins: [
-        FullReload(['/**/*.php'])
+        {
+            handleHotUpdate({ file, server }) {
+                if (file.endsWith('.php')) {
+                    server.ws.send({ type: 'full-reload', path: '*' });
+                }
+            }
+        }
     ],
 
     build: {

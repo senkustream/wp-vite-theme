@@ -23,7 +23,9 @@ composer create-project kresnasatya/wp-vite-theme your-theme-name
 
 If you check Vite URL in will contain empty file. Because it serve as a runner for your assets such as CSS and JavaScript.
 
-Just try edit `index.php`, save it! Check the browser without refresh the browser. Thanks to [vite-plugin-full-reload plugin](https://github.com/ElMassimo/vite-plugin-full-reload).
+Just try edit `index.php` or any file with `.php` extension then save it! Vite will trigger full-reload event so browser reload the page automatically. Thanks to `handleHotUpdate` hook from Vite.
+
+> [Cheatsheet](https://github.com/vinkla/wordplate/blob/master/vite.config.js).
 
 ### How to handling static assets in CSS and JS in WordPress + Vite Environment?
 

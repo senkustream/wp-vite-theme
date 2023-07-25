@@ -6,11 +6,8 @@ settings:
 
 devDependencies:
   vite:
-    specifier: ^4.4.0
-    version: 4.4.0
-  vite-plugin-full-reload:
-    specifier: ^1.0.5
-    version: 1.0.5(vite@4.4.0)
+    specifier: ^4.4.7
+    version: 4.4.7
 
 packages:
 
@@ -260,13 +257,8 @@ packages:
     resolution: {integrity: sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==}
     dev: true
 
-  /picomatch@2.3.1:
-    resolution: {integrity: sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==}
-    engines: {node: '>=8.6'}
-    dev: true
-
-  /postcss@8.4.25:
-    resolution: {integrity: sha512-7taJ/8t2av0Z+sQEvNzCkpDynl0tX3uJMCODi6nT3PfASC7dYCWV9aQ+uiCf+KBD4SEFcu+GvJdGdwzQ6OSjCw==}
+  /postcss@8.4.27:
+    resolution: {integrity: sha512-gY/ACJtJPSmUFPDCHtX78+01fHa64FaU4zaaWfuh1MhGJISufJAH4cun6k/8fwsHYeK4UQmENQK+tRLCFJE8JQ==}
     engines: {node: ^10 || ^12 || >=14}
     dependencies:
       nanoid: 3.3.6
@@ -287,18 +279,8 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /vite-plugin-full-reload@1.0.5(vite@4.4.0):
-    resolution: {integrity: sha512-kVZFDFWr0DxiHn6MuDVTQf7gnWIdETGlZh0hvTiMXzRN80vgF4PKbONSq8U1d0WtHsKaFODTQgJeakLacoPZEQ==}
-    peerDependencies:
-      vite: ^2 || ^3 || ^4
-    dependencies:
-      picocolors: 1.0.0
-      picomatch: 2.3.1
-      vite: 4.4.0
-    dev: true
-
-  /vite@4.4.0:
-    resolution: {integrity: sha512-Wf+DCEjuM8aGavEYiF77hnbxEZ+0+/jC9nABR46sh5Xi+GYeSvkeEFRiVuI3x+tPjxgZeS91h1jTAQTPFgePpA==}
+  /vite@4.4.7:
+    resolution: {integrity: sha512-6pYf9QJ1mHylfVh39HpuSfMPojPSKVxZvnclX1K1FyZ1PXDOcLBibdq5t1qxJSnL63ca8Wf4zts6mD8u8oc9Fw==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
@@ -326,7 +308,7 @@ packages:
         optional: true
     dependencies:
       esbuild: 0.18.12
-      postcss: 8.4.25
+      postcss: 8.4.27
       rollup: 3.26.2
     optionalDependencies:
       fsevents: 2.3.2
